@@ -1,90 +1,115 @@
 # Meta Elevators
 
-A modern, fully configurable **QBCore** elevator system designed for easy in-game management. Create, edit, and manage elevators without restarting your server.
+A modern, fully configurable **QBCore** elevator system with a beautiful **Meta UI**, designed for easy in-game management. Create, edit, and manage elevators without ever restarting your server.
 
-## ✨ Features
+---
+
+# ✨ Features
 
 * 🏢 Create unlimited elevators in-game
 * ➕ Add unlimited floors
-* 🚀 Live updates with **no server restarts**
+* 🎨 Modern Meta UI
+* 🚀 Live updates with **no server restart required**
 * 💾 Automatic SQL saving
 * 🎯 ox_target integration
-* 📋 qb-menu & qb-input support
-* 🌙 Smooth screen fade transitions
 * 📍 Automatic coordinate detection
 * 🔒 Public, Job, Gang & Private elevators
 * 🛠️ Admin management menu
-* ⚡ Lightweight & optimized
+* 🌙 Smooth screen fade transitions
+* ⚡ Lightweight & highly optimized
 * 🔄 Live synchronization for all players
 
-## 📦 Requirements
+---
+
+# 📦 Requirements
 
 * QBCore
 * oxmysql
 * ox_target
-* qb-menu
-* qb-input
+* **Meta UI (Required Dependency)**
 
-## 📥 Installation
+> **⚠️ Important:** `meta_elevators` requires **Meta UI** to function. Be sure to install and start **meta_ui** before **meta_elevators**.
 
-1. Download the resource.
-2. Place `meta_elevators` inside your `resources` folder.
-3. Import the included SQL file.
-4. Ensure the required dependencies are started:
+---
 
-   * qb-core
-   * oxmysql
-   * ox_target
-   * qb-menu
-   * qb-input
-5. Add the following to your `server.cfg`:
+# 📥 Installation
+
+1. Download **Meta UI** from its GitHub repository.
+2. Place `meta_ui` inside your `resources` folder.
+3. Ensure **Meta UI** starts before **Meta Elevators**.
+4. Download the `meta_elevators` resource.
+5. Place `meta_elevators` inside your `resources` folder.
+6. Import the included SQL file.
+7. Ensure the following resources are started:
+
+* qb-core
+* oxmysql
+* ox_target
+* meta_ui
+* meta_elevators
+
+Example `server.cfg`:
 
 ```cfg
+ensure qb-core
+ensure oxmysql
+ensure ox_target
+ensure meta_ui
 ensure meta_elevators
 ```
 
-## 🛠️ Creating Elevators
+---
 
-1. Use:
+# 🛠️ Creating Elevators
+
+1. Use the command:
 
 ```text
 /elevator
 ```
 
 2. Create a new elevator.
-3. Add floors from your current location.
-4. Players can immediately use the elevator with **no server restart required**.
+3. Add as many floors as you'd like from your current location.
+4. Save your changes.
+5. Every player can instantly use the elevator—**no server restart required**.
 
-## 🚀 Current Features
+---
 
-* Live Elevator Creation
-* Live Floor Creation
-* Automatic Coordinate Saving
-* SQL Persistence
-* Target-Based Interaction
-* Multi-Floor Support
-* Multi-Elevator Support
-* Public / Job / Gang / Private Elevators
-* Smooth Fade Teleporting
-* Admin Management Menu
+# 🚀 Current Features
 
-## 🔮 Planned Features
+* Live elevator creation
+* Live floor creation
+* Automatic coordinate saving
+* SQL persistence
+* Multi-floor support
+* Unlimited elevators
+* Public, Job, Gang & Private access
+* Smooth fade teleporting
+* ox_target interaction
+* Modern Meta UI
+* In-game admin management
+* Live synchronization
 
-* 📍 Live Floor Position Editor
-* ✏️ Rename Elevators & Floors
-* 🗑️ Live Floor Deletion
-* 🎨 Custom Icons
-* 💰 Paid Elevators
-* 🔑 Key & Item Access
-* 🎵 Elevator Sounds
-* 🚪 Elevator Animations
-* 🏢 MLO Builder Support
+---
+
+* 📍 Live floor position editor
+* ✏️ Rename elevators & floors
+* 🗑️ Delete floors in-game
+* 🎨 Custom floor icons
+* 💰 Paid elevators
+* 🔑 Item & key requirements
+* 🎵 Elevator sounds
+* 🚪 Elevator animations
+* 🏢 MLO builder support
+* 🌐 Multi-language support
 * And much more...
 
-## ❤️ Support
+---
 
-If you enjoy the resource, please consider leaving a review and checking out my other FiveM scripts.
+# ❤️ Support
 
-More free resources are available on my GitHub.
+If you enjoy **Meta Elevators**, please consider leaving a ⭐ on GitHub and a review. It helps support future updates and more free FiveM resources.
 
+You can find more free QBCore scripts and resources on my GitHub.
 
+Thank you for supporting **Metaverse Development!** 🚀
